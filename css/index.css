@@ -1,0 +1,92 @@
+.choose {
+	width: 900px;
+	height: 300px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.btn {
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	color: #999;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 40px;
+}
+
+#front:checked~.lifang {
+	transform: rotate3d(0, 0, 0, 0deg);
+}
+
+#front:checked~.choose [for="front"] {
+	background: #ccc;
+	color: #fff;
+	box-shadow: 0 0 30px #999;
+}
+
+#back:checked~.lifang {
+	transform: rotate3d(0, 1, 0, 180deg);
+}
+
+#back:checked~.choose [for="back"] {
+	background: #ccc;
+	color: #fff;
+	box-shadow: 0 0 30px #999;
+}
+#left:checked~.lifang {
+	transform: rotate3d(0, 1, 0, 90deg);
+}
+
+#left:checked~.choose [for="left"] {
+	background: #ccc;
+	color: #fff;
+	box-shadow: 0 0 30px #999;
+}
+#right:checked~.lifang {
+	transform: rotate3d(0, 1, 0, -90deg);
+}
+
+#right:checked~.choose [for="right"] {
+	background: #ccc;
+	color: #fff;
+	box-shadow: 0 0 30px #999;
+}
+#top:checked~.lifang {
+	transform: rotate3d(1, 0, 0, -90deg);
+}
+
+#top:checked~.choose [for="top"] {
+	background: #ccc;
+	color: #fff;
+	box-shadow: 0 0 30px #999;
+}
+#bottom:checked~.lifang {
+	transform: rotate3d(1, 0, 0, 90deg);
+}
+
+#bottom:checked~.choose [for="bottom"] {
+	background: #ccc;
+	color: #fff;
+	box-shadow: 0 0 30px #999;
+}
+#big:checked~.lifang {
+	transform: scale(2);
+}
+
+#big:checked~.choose [for="big"] {
+	background: #ccc;
+	color: #fff;
+	box-shadow: 0 0 30px #999;
+}
+#small:checked~.lifang {
+	transform: scale(.5);
+}
+
+#small:checked~.choose [for="small"] {
+	background: #ccc;
+	color: #fff;
+	box-shadow: 0 0 30px #999;
+}
